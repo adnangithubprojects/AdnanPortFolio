@@ -1,0 +1,12 @@
+.btn {
+  @apply bg-gradient-to-tr from-yellow-500 to-yellow-700 text-white  font-bold capitalize text-center rounded-md h-[50px];
+}
+.btn:hover {
+  @apply h-[60px] bg-gradient-to-tr from-yellow-700 to-yellow-500;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    @apply w-[265px];
+  }
+}

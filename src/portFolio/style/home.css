@@ -1,0 +1,25 @@
+.body {
+  background-image: url("../asset/images/homebg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @apply bg-slate-600 opacity-90;
+}
+
+.Text__Container {
+  @apply flex flex-col  h-screen text-lg text-white pl-16 gap-2 justify-center;
+}
+/* .homeBtn {
+  @apply bg-yellow-600 w-[500px] font-bold capitalize text-center rounded-md h-[40px];
+} */
+
+@media (max-width: 768px) {
+  .body {
+    @apply h-[400px];
+  }
+  .Text__Container {
+    @apply pl-2 h-full items-center;
+  }
+  /* .homeBtn {
+    @apply w-[300px];
+  } */
+}

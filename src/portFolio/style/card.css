@@ -1,0 +1,90 @@
+.Card {
+  @apply w-[320px] h-[520px] border-[1px] border-yellow-700 overflow-hidden;
+}
+.Card__image {
+  @apply h-[400px] w-full overflow-hidden;
+}
+.img1:hover {
+  transform: scale(1.1);
+}
+
+.Card__menu {
+  @apply flex flex-col gap-2 pt-2 items-center text-yellow-600 font-bold;
+}
+.Card__menu__btn {
+  @apply w-[110px] text-white hover:bg-yellow-600 hover:text-black font-bold h-[35px] border-[1px] rounded bg-yellow-700;
+}
+
+/* =====================
+=======================
+Product__Card
+=======================
+================== */
+
+.Product__Card {
+  @apply w-[420px] h-[570px] flex flex-col items-center border-[1px] border-yellow-700 overflow-hidden;
+}
+.Product__Card:hover {
+  @apply bg-orange-400 opacity-70;
+}
+.Product__Card__image {
+  /* transition: all 0.2s ease; */
+  @apply h-[400px] w-full overflow-hidden;
+}
+.Product__img1 {
+  transition: all 2s ease-in;
+}
+.Product__img1:hover {
+  transform: scale(1.1);
+}
+
+.Product__Card__icon {
+  @apply flex items-center gap-4 h-[70px] text-2xl text-slate-400;
+}
+.Icon__heart:hover {
+  @apply text-red-800;
+}
+.Icon__big:hover {
+  @apply text-green-800;
+}
+.Icon__eye:hover {
+  @apply text-black;
+}
+.Product__Card__menu {
+  @apply flex flex-col gap-2 pt-2 justify-center text-yellow-600 font-bold;
+}
+.Product__Card__reveiw {
+  @apply flex;
+}
+
+@media (max-width: 768px) {
+  .Product__Card {
+    @apply w-[330px];
+  }
+}
+
+/* =====================
+=======================
+Review__Card
+=======================
+================== */
+
+.Review__Card {
+  @apply justify-center w-[320px] h-[430px] flex flex-col gap-7 items-center border-[1px] rounded-md border-yellow-700;
+}
+.Review__Card__image {
+  @apply overflow-hidden;
+}
+.Review__img1:hover {
+  transform: scale(1.1);
+}
+.img2 {
+  @apply rounded-[50%] w-[170px] h-[170px] border-r-8 border-yellow-700;
+}
+
+.Review__Card__menu {
+  @apply text-yellow-600 font-bold flex flex-col justify-center gap-2;
+}
+.Review__Card__reveiw {
+  @apply flex pt-2;
+}

@@ -1,0 +1,34 @@
+.Contact {
+  @apply w-full flex justify-center px-5 gap-5 items-center;
+}
+.Contact__left {
+  @apply w-[40%] bottom-8;
+}
+
+.Contact__right {
+  @apply w-[60%] flex  flex-col justify-start items-center h-[400px] border-white gap-4;
+}
+.Contact__right__form {
+  @apply flex flex-col gap-8 justify-center w-full items-center;
+}
+.Contact__right__form input {
+  @apply w-full bg-slate-800 text-white px-3 rounded-lg shadow-sm border border-yellow-600 py-1;
+}
+.Contact__right__form input:hover {
+  @apply bg-yellow-500 opacity-90 text-white;
+}
+
+@media (max-width: 768px) {
+  .Contact {
+    @apply w-full flex-col;
+  }
+  .Contact__left {
+    @apply w-full;
+  }
+  .Contact__right {
+    @apply w-full;
+  }
+  .Contact__right__form input {
+    @apply w-full;
+  }
+}
